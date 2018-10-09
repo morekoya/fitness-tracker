@@ -1,0 +1,678 @@
+Started GET "/" for 127.0.0.1 at 2018-10-09 13:36:16 +0100
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.1.6) lib/active_record/migration.rb:576:in `check_pending!'
+activerecord (5.1.6) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-10-09 13:36:20 +0100
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.1.6) lib/active_record/migration.rb:576:in `check_pending!'
+activerecord (5.1.6) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateUsers (20181009123052)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181009123052"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-10-09 12:36:47.712760"], ["updated_at", "2018-10-09 12:36:47.712760"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+Started GET "/" for 127.0.0.1 at 2018-10-09 13:36:54 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+Completed 500 Internal Server Error in 148ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `suthenticate_user!' for #<WelcomeController:0x007ff06dafe0c8>
+Did you mean?  authenticate_user!):
+  
+activesupport (5.1.6) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.6) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.6) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.6) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.6) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.6) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.6) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.6) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.6) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.6) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.6) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.6) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.6) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.6) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.6) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.6) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-10-09 13:37:16 +0100
+Processing by WelcomeController#index as HTML
+Completed 500 Internal Server Error in 226ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `suthenticate_user!' for #<WelcomeController:0x007ff06f7d9968>
+Did you mean?  authenticate_user!):
+  
+activesupport (5.1.6) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.6) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.6) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.6) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.6) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.6) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.6) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.6) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.6) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.6) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.6) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.6) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.6) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.6) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.6) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.6) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-10-09 13:37:39 +0100
+Processing by WelcomeController#index as HTML
+Completed 401 Unauthorized in 11ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-10-09 13:37:39 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.5.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.5.0/app/views/devise/shared/_links.html.erb (1.5ms)
+  Rendered /Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.5.0/app/views/devise/sessions/new.html.erb within layouts/application (24.1ms)
+Completed 200 OK in 284ms (Views: 269.8ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-10-09 13:38:22 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sCexIW8gZf+zlob5hr9t6QBiKAAjxeQk3umYJJG1OFB8kg45PpK56yKsxE4nfZBmvme+Nd28n95K/1TWOHd8GQ==", "user"=>{"email"=>"morolake@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "morolake@gmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 10ms (ActiveRecord: 0.4ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sCexIW8gZf+zlob5hr9t6QBiKAAjxeQk3umYJJG1OFB8kg45PpK56yKsxE4nfZBmvme+Nd28n95K/1TWOHd8GQ==", "user"=>{"email"=>"morolake@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering /Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.5.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.5.0/app/views/devise/shared/_links.html.erb (1.3ms)
+  Rendered /Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.5.0/app/views/devise/sessions/new.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 198ms (Views: 41.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-10-09 13:38:26 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.5.0/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.5.0/app/views/devise/shared/_links.html.erb (1.4ms)
+  Rendered /Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.5.0/app/views/devise/registrations/new.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 60ms (Views: 58.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-10-09 13:38:57 +0100
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"j50jqrGELqcLmqmkmQJ812EuEL69kgBp0gVbTK7LRDTYKoLEgNsCFTKT86HM58g7B6m3rPxNhvGvYbCHZ9EnUA==", "user"=>{"email"=>"morolake@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "morolake@gmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "morolake@gmail.com"], ["encrypted_password", "$2a$11$ITJM2t10wiOZ.rhfKhvw6uh.NV9Rpk28RsIfT1vhy2f4ndQxceYNy"], ["created_at", "2018-10-09 12:38:57.678253"], ["updated_at", "2018-10-09 12:38:57.678253"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 163ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-09 13:38:57 +0100
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (333.3ms)
+Completed 500 Internal Server Error in 349ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `destooy_user_session_path' for #<#<Class:0x007ff06ce6a910>:0x007ff06d354c78>
+Did you mean?  destroy_user_session_path
+               destroy_session_path
+               destroy_user_session_url):
+    1: <h1>Welcome to the fitness tracker app</h1>
+    2: <%= link_to "logout", destooy_user_session_path, method: :delete %>
+  
+app/views/welcome/index.html.erb:2:in `_app_views_welcome_index_html_erb___2591601582719455326_70335300576780'
+Started GET "/" for 127.0.0.1 at 2018-10-09 13:39:36 +0100
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 39ms (Views: 34.2ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-10-09 13:39:43 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"6JrzVpfbK9ZpfltALOgRDh99S8SFGFw5G1vOp7zQr3EkL0xOxmn3wvhEGfeNKuyBoXjd8XthJ8OPTQJVFRLrOA=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 14ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-09 13:39:43 +0100
+Processing by WelcomeController#index as HTML
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-10-09 13:39:43 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.5.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.5.0/app/views/devise/shared/_links.html.erb (2.0ms)
+  Rendered /Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.5.0/app/views/devise/sessions/new.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 65ms (Views: 60.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-10-09 13:52:11 +0100
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (52.4ms)
+Completed 500 Internal Server Error in 473ms (ActiveRecord: 1.4ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'devise_bootstrap_views' with type 'text/css'
+Checked in these paths: 
+  /Users/bamroc/workspace/playground/fitness-tracker/app/assets/config
+  /Users/bamroc/workspace/playground/fitness-tracker/app/assets/images
+  /Users/bamroc/workspace/playground/fitness-tracker/app/assets/javascripts
+  /Users/bamroc/workspace/playground/fitness-tracker/app/assets/stylesheets
+  /Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/twitter-bootstrap-rails-3.2.2/app/assets/fonts
+  /Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/twitter-bootstrap-rails-3.2.2/app/assets/javascripts
+  /Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/twitter-bootstrap-rails-3.2.2/app/assets/stylesheets
+  /Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/twitter-bootstrap-rails-3.2.2/vendor/assets/stylesheets
+  /Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actioncable-5.1.6/lib/assets/compiled
+  /Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionview-5.1.6/lib/assets/compiled
+  /Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/bamroc/workspace/playground/fitness-tracker/node_modules):
+     7:     <title><%= content_for?(:title) ? yield(:title) : "FitnessTracker" %></title>
+     8:     <%= csrf_meta_tags %>
+     9: 
+    10:     <%= stylesheet_link_tag "application", :media => "all" %>
+    11: 
+    12:     <!-- For third-generation iPad with high-resolution Retina display: -->
+    13:     <!-- Size should be 144 x 144 pixels -->
+  
+app/assets/stylesheets/application.css:13
+app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb___1544079563451910028_70270127917840'
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-10-09 14:02:39 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (4.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (20.5ms)
+Completed 500 Internal Server Error in 87ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'devise_bootstrap_views' with type 'text/css'
+Checked in these paths: 
+  /Users/bamroc/workspace/playground/fitness-tracker/app/assets/config
+  /Users/bamroc/workspace/playground/fitness-tracker/app/assets/images
+  /Users/bamroc/workspace/playground/fitness-tracker/app/assets/javascripts
+  /Users/bamroc/workspace/playground/fitness-tracker/app/assets/stylesheets
+  /Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/twitter-bootstrap-rails-3.2.2/app/assets/fonts
+  /Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/twitter-bootstrap-rails-3.2.2/app/assets/javascripts
+  /Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/twitter-bootstrap-rails-3.2.2/app/assets/stylesheets
+  /Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/twitter-bootstrap-rails-3.2.2/vendor/assets/stylesheets
+  /Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actioncable-5.1.6/lib/assets/compiled
+  /Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionview-5.1.6/lib/assets/compiled
+  /Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/bamroc/workspace/playground/fitness-tracker/node_modules):
+     7:     <title><%= content_for?(:title) ? yield(:title) : "FitnessTracker" %></title>
+     8:     <%= csrf_meta_tags %>
+     9: 
+    10:     <%= stylesheet_link_tag "application", :media => "all" %>
+    11: 
+    12:     <!-- For all other devices -->
+    13:     <!-- Size should be 32 x 32 pixels -->
+  
+app/assets/stylesheets/application.css:13
+app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb___1544079563451910028_70270101847460'
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-10-09 14:03:22 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.9ms)
+Completed 500 Internal Server Error in 256ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The asset "favicon.ico" is not present in the asset pipeline.):
+    11: 
+    12:     <!-- For all other devices -->
+    13:     <!-- Size should be 32 x 32 pixels -->
+    14:     <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
+    15: 
+    16:     <%= javascript_include_tag "application" %>
+    17: 
+  
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb___1544079563451910028_70270153001720'
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-10-09 14:03:49 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (4.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 133ms (Views: 130.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-10-09 14:04:48 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 117ms (Views: 114.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-10-09 14:05:45 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (15.7ms)
+Completed 500 Internal Server Error in 94ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The asset "apple-touch-icon-144x144-precomposed.png" is not present in the asset pipeline.):
+    11: 
+    12:     <!-- For third-generation iPad with high-resolution Retina display: -->
+    13:     <!-- Size should be 144 x 144 pixels -->
+    14:     <%= favicon_link_tag 'apple-touch-icon-144x144-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '144x144' %>
+    15: 
+    16:     <!-- For iPhone with high-resolution Retina display: -->
+    17:     <!-- Size should be 114 x 114 pixels -->
+  
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb___1544079563451910028_70270155614440'
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-10-09 14:06:22 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (11.9ms)
+Completed 500 Internal Server Error in 80ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The asset "favicon.ico" is not present in the asset pipeline.):
+    12:   
+    13:     <!-- For all other devices -->
+    14:     <!-- Size should be 32 x 32 pixels -->
+    15:     <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
+    16: 
+    17:     <%= javascript_include_tag "application" %>
+    18: 
+  
+app/views/layouts/application.html.erb:15:in `_app_views_layouts_application_html_erb___1544079563451910028_70270166476080'
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-10-09 14:07:17 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (61.5ms)
+Completed 500 Internal Server Error in 489ms (ActiveRecord: 1.5ms)
+
+
+  
+ActionView::Template::Error (The asset "favicon.ico" is not present in the asset pipeline.):
+    12:   
+    13:     <!-- For all other devices -->
+    14:     <!-- Size should be 32 x 32 pixels -->
+    15:     <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
+    16: 
+    17:     <%= javascript_include_tag "application" %>
+    18: 
+  
+app/views/layouts/application.html.erb:15:in `_app_views_layouts_application_html_erb___2677858698082881054_70141995081980'
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-10-09 14:07:30 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (5.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 148ms (Views: 145.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-10-09 14:09:18 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (16.4ms)
+Completed 500 Internal Server Error in 87ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'devise_bootstrap_views' with type 'text/css'
+Checked in these paths: 
+  /Users/bamroc/workspace/playground/fitness-tracker/app/assets/config
+  /Users/bamroc/workspace/playground/fitness-tracker/app/assets/images
+  /Users/bamroc/workspace/playground/fitness-tracker/app/assets/javascripts
+  /Users/bamroc/workspace/playground/fitness-tracker/app/assets/stylesheets
+  /Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/twitter-bootstrap-rails-3.2.2/app/assets/fonts
+  /Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/twitter-bootstrap-rails-3.2.2/app/assets/javascripts
+  /Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/twitter-bootstrap-rails-3.2.2/app/assets/stylesheets
+  /Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/twitter-bootstrap-rails-3.2.2/vendor/assets/stylesheets
+  /Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actioncable-5.1.6/lib/assets/compiled
+  /Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionview-5.1.6/lib/assets/compiled
+  /Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/bamroc/workspace/playground/fitness-tracker/node_modules):
+     7:     <title><%= content_for?(:title) ? yield(:title) : "FitnessTracker" %></title>
+     8:     <%= csrf_meta_tags %>
+     9: 
+    10:     <%= stylesheet_link_tag "application", :media => "all" %>
+    11: 
+    12:   
+    13:     <!-- For all other devices -->
+  
+app/assets/stylesheets/application.css:13
+app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb___2677858698082881054_70142015495180'
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-10-09 14:09:48 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 101ms (Views: 98.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-10-09 15:21:54 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (7.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 490ms (Views: 487.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-10-09 15:22:32 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 164ms (Views: 161.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-10-09 15:22:34 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (4.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (26.3ms)
+Completed 200 OK in 172ms (Views: 169.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-10-09 15:22:38 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 208ms (Views: 205.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-10-09 15:22:43 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (4.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 179ms (Views: 177.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-10-09 15:22:48 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (26.6ms)
+Completed 200 OK in 151ms (Views: 149.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-10-09 15:22:55 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 216ms (Views: 213.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-10-09 15:23:15 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8gt6nvHORTm43hDh1eZdhsH5iN5TfuXMOaPAQvIwKQwRT04kkGS3fXknQQR+YUzEWthgh3p/JNdsKxWPZjrU4A==", "user"=>{"email"=>"morolake@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "morolake@gmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 224ms (ActiveRecord: 0.6ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8gt6nvHORTm43hDh1eZdhsH5iN5TfuXMOaPAQvIwKQwRT04kkGS3fXknQQR+YUzEWthgh3p/JNdsKxWPZjrU4A==", "user"=>{"email"=>"morolake@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 322ms (Views: 150.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-10-09 15:23:25 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Pt6FDFSwjbl1QyTFCcNkfa6HHLLdeRpJMlw3p4Ak+Ku8MyQw/BLEyyOyiL7+/WLsaxUXNXUS0C0ag7sVdc6vkA==", "user"=>{"email"=>"morolake@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "morolake@gmail.com"], ["LIMIT", 1]]
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 249ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-09 15:23:26 +0100
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 223ms (Views: 210.8ms | ActiveRecord: 0.3ms)
+
+
