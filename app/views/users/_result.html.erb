@@ -1,3 +1,5 @@
+
+
 <div class="results-block">
 <%= bootstrap_flash %>
 <div>
@@ -6,5 +8,6 @@
     <strong>Symbol: </strong><%= @stock.ticker %>
     <strong>Name: </strong><%= @stock.name %>
     <strong>Price: </strong><%= @stock.price %>
+    <%= link_to "Add to my Stocks", user_stock_index_path %>
   </div>
 <% end %>
