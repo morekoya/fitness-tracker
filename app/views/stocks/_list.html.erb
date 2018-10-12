@@ -1,0 +1,22 @@
+<table class="table table-stripped">
+  <thead>
+    <tr>
+      <th>NAME</th>
+      <th>SYBOL</th>
+      <th>CURRENT PRICE</th>
+      <% if @user.id == surrent_user.id%>
+        <th>Action</th>
+      <% end %>
+    </tr>
+  </thead>
+  <tbody>
+  <%user_stocks.each do |user_stock| %>
+    <tr>
+      <td><% user_stock.name %></td>
+      <td><% user_stock.ticker %></td>
+      <td><% user_stock.latest_price %></td>
+      <% if user.id == current_user.id%>
+      <td><%= linkt_to "Delete_thid_stock" user%></td>
+    </tr>
+  </tbody>
+</table>
