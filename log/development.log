@@ -5041,3 +5041,737 @@ ActionView::Template::Error (Missing partial user/_result.html with {:locale=>[:
 app/views/users/_result.js.erb:1:in `_app_views_users__result_js_erb___894055749130446914_70242153800700'
 app/controllers/stocks_controller.rb:10:in `block (2 levels) in search'
 app/controllers/stocks_controller.rb:9:in `search'
+Started GET "/search_stocks?utf8=%E2%9C%93&stock=tsla" for 127.0.0.1 at 2018-10-12 18:33:00 +0100
+Processing by StocksController#search as JS
+  Parameters: {"utf8"=>"✓", "stock"=>"tsla"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_result.js.erb (14.4ms)
+Completed 500 Internal Server Error in 1276ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (Missing partial user/_result.html with {:locale=>[:en], :formats=>[:js, :html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/bamroc/workspace/playground/fitness-tracker/app/views"
+  * "/Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-bootstrap-views-1.1.0/app/views"
+  * "/Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.5.0/app/views"
+  * "/Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/twitter-bootstrap-rails-3.2.2/app/views"
+):
+    1: $('#results').hrml("<% render 'user/result.html'%>")
+  
+app/views/users/_result.js.erb:1:in `_app_views_users__result_js_erb___894055749130446914_70242179340000'
+app/controllers/stocks_controller.rb:10:in `block (2 levels) in search'
+app/controllers/stocks_controller.rb:9:in `search'
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-10-12 19:19:37 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://0.0.0.0:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 48ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-12 19:19:37 +0100
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 147ms (Views: 137.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-12 20:04:06 +0100
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 193ms (Views: 182.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-10-12 20:05:39 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://0.0.0.0:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 25ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-12 20:05:40 +0100
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 134ms (Views: 124.3ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-10-12 20:05:48 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ad3O6N/ZYbIQU8LGT075xWZY/vVQMQndujPu3kKC/mUBIZgK6ZWUmGB60Hrq0WTne1n0J90Z/9hRo2/zbEn4kQ=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 19ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-12 20:05:48 +0100
+Processing by WelcomeController#index as HTML
+Completed 401 Unauthorized in 8ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-10-12 20:05:48 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (10.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (60.0ms)
+Completed 200 OK in 244ms (Views: 235.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-10-12 20:06:03 +0100
+  
+ActionController::RoutingError (uninitialized constant User::RegistrationsController):
+  
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:271:in `const_get'
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:271:in `block in constantize'
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.6) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.6) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/mapper.rb:16:in `block in <class:Constraints>'
+actionpack (5.1.6) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-10-12 20:06:38 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 172ms (Views: 139.4ms | ActiveRecord: 1.4ms)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddFirstAndLastNameToUsers (20181012190847)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.8ms)[0m  [1m[35mALTER TABLE "users" ADD "first_name" varchar[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "users" ADD "last_name" varchar[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181012190847"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_stocks_on_stock_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_stocks_on_stock_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_stocks_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_stocks_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-10-12 20:16:46 +0100
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 136ms (Views: 113.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-12 20:40:45 +0100
+  
+RuntimeError (Circular dependency detected while autoloading constant User):
+  
+app/controllers/user.rb:1:in `<top (required)>'
+config/routes.rb:2:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/" for 127.0.0.1 at 2018-10-12 20:42:51 +0100
+Processing by WelcomeController#index as HTML
+Completed 401 Unauthorized in 9ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-10-12 20:42:51 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.2ms)
+Completed 500 Internal Server Error in 162ms (ActiveRecord: 2.6ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "  }": expected "}", was ""):
+     7:     <title><%= content_for?(:title) ? yield(:title) : "FitnessTracker" %></title>
+     8:     <%= csrf_meta_tags %>
+     9: 
+    10:     <%= stylesheet_link_tag "application", :media => "all" %>
+    11: 
+    12:   
+    13:     <!-- For all other devices -->
+  
+app/assets/stylesheets/application.css.scss:42
+app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__2131751114932479038_70242177081020'
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-10-14 12:40:01 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (41.2ms)
+Completed 500 Internal Server Error in 199ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "@import ": expected file to import (string or url()), was "twiitter-bootstrap"):
+     7:     <title><%= content_for?(:title) ? yield(:title) : "FinanceTracker" %></title>
+     8:     <%= csrf_meta_tags %>
+     9: 
+    10:     <%= stylesheet_link_tag "application", :media => "all" %>
+    11: 
+    12:   
+    13:     <!-- For all other devices -->
+  
+app/assets/stylesheets/application.css.scss:17
+app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__2131751114932479038_70242178254600'
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-10-14 20:06:49 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (4.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (48.9ms)
+Completed 500 Internal Server Error in 184ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "@import ": expected file to import (string or url()), was "twiitter-bootstrap"):
+     7:     <title><%= content_for?(:title) ? yield(:title) : "FinanceTracker" %></title>
+     8:     <%= csrf_meta_tags %>
+     9: 
+    10:     <%= stylesheet_link_tag "application", :media => "all" %>
+    11: 
+    12:   
+    13:     <!-- For all other devices -->
+  
+app/assets/stylesheets/application.css.scss:17
+app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__2131751114932479038_70242138793640'
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-10-14 20:07:20 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (5.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (41.3ms)
+Completed 500 Internal Server Error in 155ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "@import ": expected file to import (string or url()), was "twiitter/bootstrap"):
+     7:     <title><%= content_for?(:title) ? yield(:title) : "FinanceTracker" %></title>
+     8:     <%= csrf_meta_tags %>
+     9: 
+    10:     <%= stylesheet_link_tag "application", :media => "all" %>
+    11: 
+    12:   
+    13:     <!-- For all other devices -->
+  
+app/assets/stylesheets/application.css.scss:17
+app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__2131751114932479038_70242177697220'
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-10-14 20:31:48 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (18.3ms)
+Completed 500 Internal Server Error in 124ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after " @import ": expected file to import (string or url()), was "twitter-bootstrap"):
+     7:     <title><%= content_for?(:title) ? yield(:title) : "FinanceTracker" %></title>
+     8:     <%= csrf_meta_tags %>
+     9: 
+    10:     <%= stylesheet_link_tag "application", :media => "all" %>
+    11: 
+    12:   
+    13:     <!-- For all other devices -->
+  
+app/assets/stylesheets/application.css.scss:18
+app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__2131751114932479038_70242145923980'
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-10-14 20:32:18 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (22.5ms)
+Completed 500 Internal Server Error in 92ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after " @import ": expected file to import (string or url()), was "twitter-bootstrap"):
+     7:     <title><%= content_for?(:title) ? yield(:title) : "FinanceTracker" %></title>
+     8:     <%= csrf_meta_tags %>
+     9: 
+    10:     <%= stylesheet_link_tag "application", :media => "all" %>
+    11: 
+    12:   
+    13:     <!-- For all other devices -->
+  
+app/assets/stylesheets/application.css.scss:18
+app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__2131751114932479038_70242178143780'
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-10-14 20:52:51 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (13.4ms)
+Completed 500 Internal Server Error in 104ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after " @import ": expected file to import (string or url()), was "twitter-bootstrap"):
+     7:     <title><%= content_for?(:title) ? yield(:title) : "FinanceTracker" %></title>
+     8:     <%= csrf_meta_tags %>
+     9: 
+    10:     <%= stylesheet_link_tag "application", :media => "all" %>
+    11: 
+    12:   
+    13:     <!-- For all other devices -->
+  
+app/assets/stylesheets/application.css.scss:18
+app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__2131751114932479038_70242179046780'
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-10-14 20:54:35 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (21.3ms)
+Completed 500 Internal Server Error in 243ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial layouts/_navigation with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/bamroc/workspace/playground/fitness-tracker/app/views"
+  * "/Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-bootstrap-views-1.1.0/app/views"
+  * "/Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.5.0/app/views"
+  * "/Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/twitter-bootstrap-rails-3.2.2/app/views"
+):
+    24: 
+    25:     <div class="navbar navbar-default navbar-static-top">
+    26:       <div class="container">
+    27:       <%= render 'layouts/navigation' %>
+    28:       </div>
+    29:     </div>
+    30: 
+  
+app/views/layouts/application.html.erb:27:in `_app_views_layouts_application_html_erb__2131751114932479038_70242170912400'
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-10-14 20:55:01 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (22.2ms)
+Completed 500 Internal Server Error in 188ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial layouts/_navigation with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/bamroc/workspace/playground/fitness-tracker/app/views"
+  * "/Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-bootstrap-views-1.1.0/app/views"
+  * "/Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.5.0/app/views"
+  * "/Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/twitter-bootstrap-rails-3.2.2/app/views"
+):
+    24: 
+    25:     <div class="navbar navbar-default navbar-static-top">
+    26:       <div class="container">
+    27:       <%= render 'layouts/navigation' %>
+    28:       </div>
+    29:     </div>
+    30: 
+  
+app/views/layouts/application.html.erb:27:in `_app_views_layouts_application_html_erb__2131751114932479038_70242138035300'
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-10-14 20:55:17 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (15.1ms)
+Completed 500 Internal Server Error in 106ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after " @import ": expected file to import (string or url()), was "twitter-bootstrap"):
+     7:     <title><%= content_for?(:title) ? yield(:title) : "FinanceTracker" %></title>
+     8:     <%= csrf_meta_tags %>
+     9: 
+    10:     <%= stylesheet_link_tag "application", :media => "all" %>
+    11: 
+    12:   
+    13:     <!-- For all other devices -->
+  
+app/assets/stylesheets/application.css.scss:18
+app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__2131751114932479038_70242137528220'
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-10-14 21:16:56 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (26.3ms)
+Completed 500 Internal Server Error in 89ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after " @import ": expected file to import (string or url()), was "twitter-bootstrap"):
+     7:     <title><%= content_for?(:title) ? yield(:title) : "FinanceTracker" %></title>
+     8:     <%= csrf_meta_tags %>
+     9: 
+    10:     <%= stylesheet_link_tag "application", :media => "all" %>
+    11: 
+    12:   
+    13:     <!-- For all other devices -->
+  
+app/assets/stylesheets/application.css.scss:18
+app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__2131751114932479038_70242112579160'
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-10-14 22:45:20 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (17.4ms)
+Completed 500 Internal Server Error in 97ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "  @import ": expected file to import (string or url()), was "twitter-bootstrap"):
+     7:     <title><%= content_for?(:title) ? yield(:title) : "FinanceTracker" %></title>
+     8:     <%= csrf_meta_tags %>
+     9: 
+    10:     <%= stylesheet_link_tag "application", :media => "all" %>
+    11: 
+    12:   
+    13:     <!-- For all other devices -->
+  
+app/assets/stylesheets/application.css.scss:18
+app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__2131751114932479038_70242145779220'
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-10-14 22:45:53 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (11.7ms)
+Completed 500 Internal Server Error in 78ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after " @import ": expected file to import (string or url()), was "twitter-bootstrap"):
+     7:     <title><%= content_for?(:title) ? yield(:title) : "FinanceTracker" %></title>
+     8:     <%= csrf_meta_tags %>
+     9: 
+    10:     <%= stylesheet_link_tag "application", :media => "all" %>
+    11: 
+    12:   
+    13:     <!-- For all other devices -->
+  
+app/assets/stylesheets/application.css.scss:18
+app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__2131751114932479038_70242138193460'
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-10-14 23:11:46 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (11.8ms)
+Completed 500 Internal Server Error in 116ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after " @import ": expected file to import (string or url()), was "twitter-bootstr..."):
+     7:     <title><%= content_for?(:title) ? yield(:title) : "FinanceTracker" %></title>
+     8:     <%= csrf_meta_tags %>
+     9: 
+    10:     <%= stylesheet_link_tag "application", :media => "all" %>
+    11: 
+    12:   
+    13:     <!-- For all other devices -->
+  
+app/assets/stylesheets/application.css.scss:18
+app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__2131751114932479038_70242169916760'
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-10-15 10:16:13 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (11.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (75.9ms)
+Completed 500 Internal Server Error in 625ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial layouts/_navigation with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/bamroc/workspace/playground/fitness-tracker/app/views"
+  * "/Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-bootstrap-views-1.1.0/app/views"
+  * "/Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.5.0/app/views"
+  * "/Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/twitter-bootstrap-rails-3.2.2/app/views"
+):
+    24: 
+    25:     <div class="navbar navbar-default navbar-static-top">
+    26:       <div class="container">
+    27:       <%= render 'layouts/navigation' %>
+    28:       </div>
+    29:     </div>
+    30: 
+  
+app/views/layouts/application.html.erb:27:in `_app_views_layouts_application_html_erb__2131751114932479038_70242177025480'
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-10-15 10:17:10 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (23.5ms)
+  Rendered layouts/_navigation.html.erb (5.9ms)
+Completed 200 OK in 209ms (Views: 205.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-10-15 10:17:52 +0100
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kSKPEFeMcpTcLDUb/bEWR4XTep/jMcQbuDjB9P7HzQHjLuuvHHQvMCy9lhwcLotN1/6nVzcMlNd8glPP61rPFg==", "user"=>{"email"=>"morolake@example.com", "first_name"=>"Morolake", "last_name"=>"Orekoya", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Unpermitted parameters: :first_name, :last_name
+  [1m[35m (11.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (3.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "morolake@example.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (11.7ms)
+  Rendered layouts/_navigation.html.erb (1.2ms)
+Completed 200 OK in 592ms (Views: 149.1ms | ActiveRecord: 15.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-10-15 10:18:24 +0100
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T3naEJ0ntekzQEDtx2X+KjFgvEvmQj0tMUs15HIQJJs9db6v1t/oTcPR4+om+mMgY01hgzJ/beH18affZ40mjA==", "user"=>{"email"=>"morolake@example.com", "first_name"=>"Morolake", "last_name"=>"Orekoya", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Unpermitted parameters: :first_name, :last_name
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "morolake@example.com"], ["LIMIT", 1]]
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "morolake@example.com"], ["encrypted_password", "$2a$11$sKZ4Sd9EOOVAs1sQuUM7CO1QDSJ4lIpM4RCgEHG1niJZY5Y1hP5iO"], ["created_at", "2018-10-15 09:18:24.226500"], ["updated_at", "2018-10-15 09:18:24.226500"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 247ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-15 10:18:24 +0100
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navigation.html.erb (12.9ms)
+Completed 200 OK in 250ms (Views: 207.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-15 10:18:36 +0100
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+Completed 200 OK in 186ms (Views: 173.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-15 10:18:40 +0100
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+Completed 200 OK in 164ms (Views: 157.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-15 10:18:41 +0100
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_navigation.html.erb (1.1ms)
+Completed 200 OK in 172ms (Views: 162.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-15 10:26:05 +0100
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_navigation.html.erb (1.3ms)
+Completed 200 OK in 344ms (Views: 274.3ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/my_portfolio" for 127.0.0.1 at 2018-10-15 10:26:19 +0100
+Processing by UsersController#my_portfolio as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering users/my_portfolio.html.erb within layouts/application
+  Rendered users/my_portfolio.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+Completed 200 OK in 137ms (Views: 122.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/search_stocks?utf8=%E2%9C%93&stock=aapl" for 127.0.0.1 at 2018-10-15 10:26:24 +0100
+Processing by StocksController#search as JS
+  Parameters: {"utf8"=>"✓", "stock"=>"aapl"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered users/_result.js.erb (13.6ms)
+Completed 500 Internal Server Error in 1083ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (Missing partial user/_result.html with {:locale=>[:en], :formats=>[:js, :html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/bamroc/workspace/playground/fitness-tracker/app/views"
+  * "/Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-bootstrap-views-1.1.0/app/views"
+  * "/Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.5.0/app/views"
+  * "/Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/twitter-bootstrap-rails-3.2.2/app/views"
+):
+    1: $('#results').hrml("<% render 'user/result.html'%>")
+  
+app/views/users/_result.js.erb:1:in `_app_views_users__result_js_erb___894055749130446914_70242182643220'
+app/controllers/stocks_controller.rb:10:in `block (2 levels) in search'
+app/controllers/stocks_controller.rb:9:in `search'
+Started GET "/search_stocks?utf8=%E2%9C%93&stock=aapl" for 127.0.0.1 at 2018-10-15 10:26:27 +0100
+Processing by StocksController#search as JS
+  Parameters: {"utf8"=>"✓", "stock"=>"aapl"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered users/_result.js.erb (16.0ms)
+Completed 500 Internal Server Error in 895ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (Missing partial user/_result.html with {:locale=>[:en], :formats=>[:js, :html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/bamroc/workspace/playground/fitness-tracker/app/views"
+  * "/Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-bootstrap-views-1.1.0/app/views"
+  * "/Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.5.0/app/views"
+  * "/Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/twitter-bootstrap-rails-3.2.2/app/views"
+):
+    1: $('#results').hrml("<% render 'user/result.html'%>")
+  
+app/views/users/_result.js.erb:1:in `_app_views_users__result_js_erb___894055749130446914_70242146860300'
+app/controllers/stocks_controller.rb:10:in `block (2 levels) in search'
+app/controllers/stocks_controller.rb:9:in `search'
+Started GET "/my_portfolio" for 127.0.0.1 at 2018-10-15 10:30:17 +0100
+Processing by UsersController#my_portfolio as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering users/my_portfolio.html.erb within layouts/application
+  Rendered users/my_portfolio.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_navigation.html.erb (2.0ms)
+Completed 200 OK in 188ms (Views: 180.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/search_stocks?utf8=%E2%9C%93&stock=aapl" for 127.0.0.1 at 2018-10-15 10:30:25 +0100
+Processing by StocksController#search as JS
+  Parameters: {"utf8"=>"✓", "stock"=>"aapl"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered users/_result.js.erb (15.0ms)
+Completed 500 Internal Server Error in 1335ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (Missing partial user/_result.html with {:locale=>[:en], :formats=>[:js, :html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/bamroc/workspace/playground/fitness-tracker/app/views"
+  * "/Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-bootstrap-views-1.1.0/app/views"
+  * "/Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.5.0/app/views"
+  * "/Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/twitter-bootstrap-rails-3.2.2/app/views"
+):
+    1: $('#results').hrml("<% render 'user/result.html'%>")
+  
+app/views/users/_result.js.erb:1:in `_app_views_users__result_js_erb___894055749130446914_70242182686840'
+app/controllers/stocks_controller.rb:10:in `block (2 levels) in search'
+app/controllers/stocks_controller.rb:9:in `search'
+Started GET "/search_stocks?utf8=%E2%9C%93&stock=aapl" for 127.0.0.1 at 2018-10-15 10:34:04 +0100
+Processing by StocksController#search as JS
+  Parameters: {"utf8"=>"✓", "stock"=>"aapl"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered users/_result.js.erb (15.6ms)
+Completed 500 Internal Server Error in 1339ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (Missing partial user/_result.html.erb with {:locale=>[:en], :formats=>[:js, :html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/bamroc/workspace/playground/fitness-tracker/app/views"
+  * "/Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-bootstrap-views-1.1.0/app/views"
+  * "/Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.5.0/app/views"
+  * "/Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/twitter-bootstrap-rails-3.2.2/app/views"
+):
+    1: $('#results').hrml("<% render 'user/result.html.erb'%>")
+  
+app/views/users/_result.js.erb:1:in `_app_views_users__result_js_erb___894055749130446914_70242178374980'
+app/controllers/stocks_controller.rb:10:in `block (2 levels) in search'
+app/controllers/stocks_controller.rb:9:in `search'
+Started GET "/search_stocks?utf8=%E2%9C%93&stock=aapl" for 127.0.0.1 at 2018-10-15 10:34:18 +0100
+Processing by StocksController#search as JS
+  Parameters: {"utf8"=>"✓", "stock"=>"aapl"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered users/_result.js.erb (14.8ms)
+Completed 500 Internal Server Error in 985ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (Missing partial user/_result.html.erb with {:locale=>[:en], :formats=>[:js, :html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/bamroc/workspace/playground/fitness-tracker/app/views"
+  * "/Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-bootstrap-views-1.1.0/app/views"
+  * "/Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.5.0/app/views"
+  * "/Users/bamroc/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/twitter-bootstrap-rails-3.2.2/app/views"
+):
+    1: $('#results').hrml("<% render 'user/result.html.erb'%>")
+  
+app/views/users/_result.js.erb:1:in `_app_views_users__result_js_erb___894055749130446914_70242146120320'
+app/controllers/stocks_controller.rb:10:in `block (2 levels) in search'
+app/controllers/stocks_controller.rb:9:in `search'
+Started GET "/my_portfolio" for 127.0.0.1 at 2018-10-15 10:36:42 +0100
+Processing by UsersController#my_portfolio as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering users/my_portfolio.html.erb within layouts/application
+  Rendered users/my_portfolio.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_navigation.html.erb (1.1ms)
+Completed 200 OK in 154ms (Views: 145.8ms | ActiveRecord: 0.2ms)
+
+
